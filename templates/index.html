@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='site/index.css') }}">
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="conteiner">
+            <nav>
+                <ul>
+                    <a href="{{ url_for('about') }}"><li>Sobre mim</li></a>
+                    <a href="{{ url_for('projetos') }}"><li>Projetos</li></a>
+                    <a href="{{ url_for('contact') }}"><li>Contato</li></a>
+                </ul>
+            </nav>
+    
+            <header>
+                <div class="header_center">
+                    <img src="{{ url_for('static', filename='img/dan1.png') }}"></img>
+                </div>
+                <h1>Daniel Alves</h1>
+                <h2>Estudante de Programação</h2>
+            </header>
+    
+            <main>
+                <section>
+                    <h3>SOBRE MIM</h3>
+                        
+                        <p>
+                            <b>Perito em Computação Forense </b>Profissional especializado em investigação de crimes cibernéticos, 
+                            com ampla experiência na coleta, análise e preservação de evidências 
+                            digitais. Capacidade comprovada de aplicar técnicas avançadas de 
+                            recuperação de dados e análise de sistemas para apoiar investigações 
+                            legais e corporativas.
+                        </p>
+                            <h4></h4>
+                </section>
+                <section>
+                    <h3>FORMAÇÃO</h3>
+                        
+                        <p><b>Instrutor Cisco </b>Instrutor certificado pela Cisco, com habilidades excepcionais em ministrar 
+                            treinamentos e cursos sobre redes e infraestrutura de TI. Experiência sólida 
+                            em preparar e capacitar profissionais para obter certificações Cisco, além 
+                            de contribuir para o desenvolvimento de competências técnicas essenciais 
+                            para o mercado de trabalho.
+                        </p>
+                </section>
+                <section>
+                    <h3>CURSOS</h3>
+                        
+                            <p><b>Analista de TI </b>Analista de Tecnologia da Informação com vasta experiência em gerenciar, 
+                                implementar e otimizar sistemas de TI. Habilidade em resolver problemas 
+                                técnicos, garantir a segurança dos dados e suportar a infraestrutura de 
+                                TI para atender às necessidades estratégicas da organização.</p>
+                </section>
+            </main>
+    
+            <footer>
+                <a href="https://github.com/danielperitofd" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='img/git_ico.png') }}"></img>
+                    <p>GitHub</p>
+                </a>
+                    
+                <a href="https://www.instagram.com/danielperitofd/" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='img/Insta_ico.png') }}"></img>
+                    <p>Instagram</p>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/danielguspe/" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='img/linkedin_ico.png') }}"></img>
+                    <p>Linkedin</p>
+                </a>
+    
+                <a href="https://www.youtube.com/@OxenTeInfo" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='img/youtube-ico.png') }}"></img>
+                    <p>YouTube</p>
+                </a>
+            </footer>
+        </div>
+    </body>
+</html>
